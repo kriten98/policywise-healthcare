@@ -1,7 +1,7 @@
 # PolicyWise AI
 
 > **AI-powered Health Insurance Intelligence Platform**
-> Helping Indian policyholders understand what their policy actually covers — before they need to use it.
+> Helping Indian policyholders understand what their policy actually covers. Before they need to use it.
 
 🔗 [Live Prototype](https://policywise-ai.pages.dev/) &nbsp;|&nbsp; 📊 [Eval Results (V0)](https://docs.google.com/spreadsheets/d/1kK7Gq4IvonJQ_AiVhOXV7-NOdt5EjBIkqyTefpRmk58/)
 
@@ -9,11 +9,11 @@
 
 ## The Problem
 
-Most Indian health insurance policyholders only discover the fine print during a claim — when it's too late. Room rent caps trigger proportionate deductions that can slash payouts by 30–40%. Co-pay clauses, sub-limits, and cashless intimation deadlines are buried in 40-page policy PDFs written in legal language.
+Most Indian health insurance policyholders only discover the fine print during a claim, when it's too late. Room rent caps trigger proportionate deductions that can slash payouts by 30–40%. Co-pay clauses, sub-limits, and cashless intimation deadlines are buried in 40-page policy PDFs written in legal language.
 
 The result: patients end up paying far more out-of-pocket than they expected, not because they weren't covered, but because they didn't understand how their coverage worked.
 
-PolicyWise AI solves this by turning a policy PDF into a structured intelligence dashboard — surfacing every clause that could reduce a claim, before hospitalization happens.
+PolicyWise AI solves this by turning a policy PDF into a structured intelligence dashboard, surfacing every clause that could reduce a claim, before hospitalization happens.
 
 ---
 
@@ -22,12 +22,12 @@ PolicyWise AI solves this by turning a policy PDF into a structured intelligence
 **For a new user:**
 1. Upload a health insurance policy PDF
 2. The AI pipeline extracts all claim-critical information within ~10 seconds
-3. A structured dashboard renders — showing benefits, sub-limits, claim risks, and a policy health score
+3. A structured dashboard renders, showing benefits, sub-limits, claim risks, and a policy health score
 
 **For a returning user:**
 - Dashboard loads instantly from stored policy data
 - A chat interface lets users ask natural language questions about their specific policy
-- The AI agent answers using only the user's actual policy data — no hallucinated coverage
+- The AI agent answers using only the user's actual policy data, no hallucinated coverage
 
 ---
 
@@ -65,7 +65,7 @@ The frontend (Next.js 15) is intentionally decoupled from the backend pipeline. 
 
 ## Evaluation (V0)
 
-Tested across 6 synthetic policy documents. Metrics designed for the domain — insurance literacy errors have real financial consequences.
+Tested across 6 synthetic policy documents (Policies O, A, B, C, D and E). 
 
 | Metric | Score |
 |---|---|
@@ -100,7 +100,7 @@ Policy A showed an outlier hallucination rate of 31%, flagged and under investig
 ## Repository Structure
 
 ```
-policywise-ai/
+policywise-healthcare/
 ├── README.md
 ├── docs/
 │   ├── architecture.md          # System design and flow detail
@@ -132,6 +132,3 @@ The frontend and backend are deliberately kept decoupled at this stage. Integrat
 
 ---
 
-## About
-
-Built by an APM exploring the intersection of AI and financial literacy in Indian healthcare. This project is part of a portfolio demonstrating end-to-end AI product thinking — from problem scoping through architecture, evaluation, and iteration.
